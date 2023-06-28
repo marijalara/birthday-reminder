@@ -11,3 +11,4 @@ I created new folder called components in that folder I created new file called 
 In List.js I used map statement to display all this people with picture of them, names and ages.
 
 I used all className in index.css to style it a bit.
+In the Button.js I used onClick function for button, so I created onClickClear function where I used setPeople to clear all reminder for birthday.

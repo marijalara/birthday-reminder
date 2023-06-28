@@ -9,9 +9,9 @@ const App = () => {
     return (
         <div className='App'>
             <Container maxWidth="sm" className='container'>
-                <h2 className='header'>birthdays today</h2>
+                <h2 className='header'>{people.length} birthdays today</h2>
                 <List people={people}/>
-                <Button />
+                <Button setPeople={setPeople}/>
             </Container>
         </div>
     )

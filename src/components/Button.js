@@ -1,8 +1,12 @@
 import React from 'react'
 
-const Button = () => {
+const Button = ({setPeople}) => {
+    const onClickClear=() => {
+        setPeople([])
+    }
+    
     return (
-        <button className='btn'>
+        <button className='btn' onClick={onClickClear}>
             Clear All
         </button>
     )
