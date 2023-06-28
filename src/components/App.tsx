@@ -4,8 +4,14 @@ import Button from './Button';
 import List from './List';
 import { data } from '../data';
 
-const App = () => {
-    const [people, setPeople]=useState(data)
+export interface PropsPeople {
+    id: number,
+    name: string,
+    age: number,
+    image: string
+}
+const App: React.FC= () => {
+    const [people, setPeople]=useState<PropsPeople[]>(data)
     return (
         <div className='App'>
             <Container maxWidth="sm" className='container'>
